@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offline Classes</title>
+    <link rel="stylesheet" href="../Alverixis solutions/css/all.css">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .hero {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60vh;
+        color: white;
+        display: flex;
+        align-items: center;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+      .hero-content {
+        z-index: 1;
+        position: relative;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 30px;
+        border-radius: 10px;
+      }
+      .hero h1 {
+        font-size: 40px;
+      }
+      .hero p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .buttons button {
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        margin-right: 10px;
+      }
+      .primary-btn {
+        background-color: #007bff;
+        color: white;
+      }
+      .secondary-btn {
+        background-color: #333;
+        color: white;
+      }
+      .features {
+        display: flex;
+        justify-content: space-around;
+        padding: 40px;
+        background: #f8f9fa;
+        margin-top: 60vh; /* Adjusted to account for fixed hero section */
+      }
+      .feature {
+        text-align: center;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 22%;
+      }
+      .feature img {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 10px;
+      }
+      @media (max-width: 1300px) {
+    .home .max-width {
+      margin-left: 0px;
+    }
+  }
+  @media (max-width: 1104px) {
+    .about .about-content .left img {
+      height: 350px;
+      width: 350px;
+    }
+  }
+  @media (max-width: 991px) {
+    .max-width {
+      padding: 0 50px;
+    }
+  }
+  @media (max-width: 947px) {
+    .max-width {
+      padding: 0 50px;
+    }
+}
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <iframe src="../Alverixis solutions/offlineBanner.html"></iframe>
+      <!-- Change to a suitable offline banner -->
+    </div>
+    <div class="features">
+      <div class="feature">
+        <img
+          src="../Alverixis solutions/images/img5.jpg"
+          alt="Personal Interaction"
+        />
+        <h3>Personal Interaction</h3>
+        <p>Engage directly with instructors and classmates.</p>
+      </div>
+      <div class="feature">
+        <img
+          src="../Alverixis solutions/images/offline1.webp"
+          alt="Structured Schedule"
+        />
+        <h3>Structured Schedule</h3>
+        <p>Follow a fixed timetable for better discipline.</p>
+      </div>
+      <div class="feature">
+        <img
+          src="../Alverixis solutions/images/offline2.webp"
+          alt="Hands-On Learning"
+        />
+        <h3>Hands-On Learning</h3>
+        <p>Gain practical experience through physical activities and labs.</p>
+      </div>
+      <div class="feature">
+        <img
+          src="../Alverixis solutions/images/offline3.webp"
+          alt="Local Community"
+        />
+        <h3>Local Community</h3>
+        <p>Be part of a local community and network in person.</p>
+      </div>
+    </div>
+  </body>
+</html>

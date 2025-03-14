@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AEVCO</title>
+    <link rel="stylesheet" href="../Alverixis solutions/css/login.css" />
+    <link rel="stylesheet" href="../index.html" />
+    <link rel="stylesheet" href="../Alverixis solutions/css/all.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="left-section">
+      <div class="slider-container">
+        <img
+          class="slider-image active"
+          src="./images/log1.jpeg"
+          alt="Slide 1"
+        />
+        <img class="slider-image" src="./images/log1.jpeg" alt="Slide 2" />
+        <img class="slider-image" src="./images/log2.jpg" alt="Slide 3" />
+      </div>
+    </div>
+    <div class="right-section">
+      <div class="arrow-icon"><a href="../index.html">→</a></div>
+      <h5 class="text-center">Welcome to AVERIXIS SOLUTIONS ..!</h5>
+
+      <div class="button-group">
+        <button
+          href="../Alverixis solutions/login.html"
+          class="btn login text-white"
+        >
+          LMS Login
+        </button>
+        <button href="../Alverixis solutions/sign.html" class="btn sign">
+          Sign Up
+        </button>
+      </div>
+
+      <p class="description">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry.
+      </p>
+      <form>
+        <div class="form-group">
+          <label class="form-label">Learner ID / Email ID</label>
+          <input
+            type="text"
+            class="form-control border border-warning"
+            placeholder="Enter your User name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Password</label>
+          <div class="password-input-container">
+            <input
+              type="password"
+              class="form-control border border-warning"
+              placeholder="Enter your Password"
+            />
+            <span class="password-toggle">👁️</span>
+          </div>
+        </div>
+
+        <div class="form-footer">
+          <label class="remember-me">
+            <input type="checkbox" />
+            <span>Remember me</span>
+          </label>
+          <a href="#" class="forgot-password">Forgot Password ?</a>
+        </div>
+
+        <button type="submit" class="submit">Login</button>
+      </form>
+    </div>
+
+    <script>
+      document
+        .querySelector("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          window.location.href = "../Alverixis solutions/first.html";
+        });
+
+      const images = document.querySelectorAll(".slider-image");
+      let currentImageIndex = 0;
+
+      function changeImage() {
+        images[currentImageIndex].classList.remove("active");
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        images[currentImageIndex].classList.add("active");
+      }
+      setInterval(changeImage, 1000);
+
+      const passwordToggle = document.querySelector(".password-toggle");
+      const passwordInput = document.querySelector('input[type="password"]');
+      passwordToggle.addEventListener("click", () => {
+        const type =
+          passwordInput.getAttribute("type") === "password"
+            ? "text"
+            : "password";
+        passwordInput.setAttribute("type", type);
+        passwordToggle.textContent = type === "password" ? "👁️" : "👁️‍🗨️";
+      });
+    </script>
+  </body>
+</html>
