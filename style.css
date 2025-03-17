@@ -967,31 +967,3 @@ body {
   }
 }
 
-
-@media (max-width: 768px) {  
-  body {  
-    padding-left: 15px;  
-    padding-right: 15px;  
-  }  
-
-  .navbar {  
-    padding-left: 10px;  
-    padding-right: 10px;  
-  }  
-
-  .content, .trusted, .question, .category, .testimonial, .faq-content {  
-    padding-left: 20px;  
-    padding-right: 20px;  
-  }  
-}
- 
-@media (max-width: 768px) {  
-  .navbar-nav {  
-    flex-wrap: wrap;  
-    justify-content: center;  
-  }  
-
-  .courses, .identity-left-right, .tools {  
-    flex-wrap: wrap;  
-  }  
-}
