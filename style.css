@@ -6,7 +6,9 @@
 
 body {
   background-color: rgb(240, 240, 240);
-  border: 15px;
+ 
+  
+
 }
 
 /* NAVBAR START */
@@ -672,26 +674,97 @@ body {
 
 /* FOOTER START */
 
-.footers {
+
+.footer-nav {
   display: flex;
+  justify-content: space-between;
+  gap: 30px;
   flex-wrap: wrap;
-  padding: 4% 0%;
-}
-.footer-category a,
-.footer-company a,
-.footer-contact a {
-  text-decoration: none;
-  color: #33337f;
-  font-weight: bold;
-}
-.social-icon {
-  display: flex;
-}
-.cat {
-  color: 170F49;
-  font-weight: bolder;
+  padding: 30px;
 }
 
+.footer-nav .averixis-solutions {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.footer-nav .nav-section {
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+}
+
+.footer-heading {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.footer-nav li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.footer-nav a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: #666;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.social-links a {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.social-links a.linkedin {
+  background-color: #0077B5;
+}
+
+.social-links a.instagram {
+  background-color: #E1306C;
+}
+
+.social-links a.whatsapp {
+  background-color: #25D366;
+}
+
+.social-links a.facebook {
+  background-color: #4267B2;
+}
+
+.social-links a:hover {
+  background-color: #666;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #333;
+}
 /* FOOTER END */
 
 /* MEDIA QUERIES START */
@@ -894,3 +967,31 @@ body {
   }
 }
 
+
+@media (max-width: 768px) {  
+  body {  
+    padding-left: 15px;  
+    padding-right: 15px;  
+  }  
+
+  .navbar {  
+    padding-left: 10px;  
+    padding-right: 10px;  
+  }  
+
+  .content, .trusted, .question, .category, .testimonial, .faq-content {  
+    padding-left: 20px;  
+    padding-right: 20px;  
+  }  
+}
+ 
+@media (max-width: 768px) {  
+  .navbar-nav {  
+    flex-wrap: wrap;  
+    justify-content: center;  
+  }  
+
+  .courses, .identity-left-right, .tools {  
+    flex-wrap: wrap;  
+  }  
+}
